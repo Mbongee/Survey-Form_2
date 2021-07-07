@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+<div id="wrap">
+    <div>
+        <h1 id="title"><code>&lt;coders&sol;&gt;</code> </h1>
+        <h2 id="sub-title">Book Club</h2>
+        <p id="description">Welcome to the <code>&lt;coders&sol;&gt;</code> Book Club. This club is created for the
+            betterment of coders and by extension the industry as whole. We trust your involvement will benefit you and
+            all of us in the the club. Please fill in the form below, it serves as both the members application form and
+            a mini-survey so club members can get to know each other. </p>
+    </div>
+
+    <form id="survey-form">
+        <div>
+            <label id="name-label" for="name">Name</label>
+            <input type="text" id="name" name="name" pattern="[A-Za-z0-9]+" placeholder="  Enter your name" required>
+        </div>
+
+        <div>
+            <label id="email-label" for="email">Email</label>
+            <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                placeholder="  Enter your email" required>
+        </div>
+
+        <div>
+            <label id="number-label" for="number">Age</label>
+            <input type="number" id="number" name="number" placeholder="  Age" required min="1" max="90">
+        </div>
+
+        <div class="border-bottom">
+            <label for="birthday">Birthday <span class="clue"> (Optional) Used for celebrations and
+                    gifting</span></label>
+            <input type="date" id="birthday" name="birthday">
+        </div>
+
+        <div>
+            <label for="dropdown">What is your current career status?</label>
+            <select id="dropdown" name="role">
+                <option disabled selected value>Select status</option>
+                <option value="student">Junior Dev &#47; At the beginning</option>
+                <option value="job">Full Time Job &#47; working hours</option>
+                <option value="freelance">Freelancer</option>
+                <option value="partTimeJob">Part Time Freelancer &#47; Job</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div>
+            <p>Would you be willing to donate?</p>
+            <label>
+                <input name="user-recommend" value="definitely" type="radio" class="input-radio">Definitely
+            </label>
+        </div>
+
+
+        <div>
+            <label>
+                <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe
+            </label>
+        </div>
+
+        <div>
+            <label>
+                <input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure
+            </label>
+        </div>
+
+
+        <div>
+            <p>Would you be willing to buy the club&#39;s merchendise?</p>
+            <label>
+                <input name="user-recommend" value="definitely" type="radio" class="input-radio">Definitely
+            </label>
+        </div>
+
+
+        <div>
+            <label>
+                <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe
+            </label>
+        </div>
+
+        <div>
+            <label>
+                <input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure
+            </label>
+        </div>
+
+
+        <div>
+            <p>What scripting languages&#44; mark-up languages &amp; frameworks would most benefit you?<span
+                    class="clue"> (Check all that apply)</span></p>
+            <label>
+                <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end
+            </label>
+        </div>
+
+        <div>
+            <label>
+                <input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">Back-end
+            </label>
+        </div>
+
+        <div>
+            <p>What would you like to receive as a gift</p>
+            <label>
+                <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">T-shirts&#47;tops
+            </label>
+        </div>
+
+        <div>
+            <label>
+                <input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">Books
+            </label>
+        </div>
+
+        <div>
+            <label>
+                <input name="prefer" value="challenges" type="checkbox" class="input-checkbox">Tickets&#47;entry to
+                industry events
+            </label>
+        </div>
+
+
+
+        <p>All comments or suggestions are welcome&#33;</p>
+        <textarea id="comments" class="input-textarea" name="comment"
+            placeholder="Enter your comment here..."></textarea>
+
+        <div>
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+    </form>
+
+
+</div>
+</body>
+</html>
